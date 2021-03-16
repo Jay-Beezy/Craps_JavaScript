@@ -1,0 +1,39 @@
+<HTML>
+  <head>
+    <title>Craps</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="info" class="row">
+      <h1>~~ Craps! ~~</h1>
+    </div>
+    <div id="main-row" class="row">
+      <div id="start-menu">
+        <h1>Choose your starting amount</h1>
+        <div class="starting-slider">
+          <input type="text" id="start-slider">
+        </div>
+        <div class="row">
+          <button type="button" id="start-button" class="startbtn">Start</button>
+        </div>
+      </div>
+    </div>
+    <div id="console-row">
+			<h3 class="text-mid">Console</h3>
+			<ul id="console-messages"></ul>
+    </div>
+    <canvas id="board" width="800" height="500" class="board"></canvas>
+    <div id="dice-menu" class="dice">
+      <canvas id="dice" width="310" height="150"style="border: 10px solid black"></canvas>
+    </div>
+    <input type="button" id="roll-button" class="roll"value="ROLL !">
+
+    <link rel="stylesheet" href="css/rSlider.min.css">
+    <script src="js/rSlider.min.js"></script>
+
+    <script src = "board.js"></script>
+    <script src = "display.js"></script>
+    <script src = "dice.js"></script>
+    <script src = "main.js"></script>
+  </body>
+</HTML>
