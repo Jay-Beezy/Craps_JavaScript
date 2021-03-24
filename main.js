@@ -22,7 +22,7 @@ let GameConsole = {
 		//None of this makes sense so figure it out /\
 
 		// Remove oldest message when list grows.
-		if(this.messages_active > 3) {
+		if(this.messages_active > 10) {
 			this.message_list.childNodes[0].remove();
 		}
 	},

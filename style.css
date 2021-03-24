@@ -19,6 +19,12 @@ button {
     margin: 5px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .row {
     width: 100%;
     margin: auto;
@@ -49,7 +55,6 @@ button {
 .board {
     width: 800px;
     height: 500px;
-    margin: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -58,11 +63,9 @@ button {
 }
 
 .dice {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
   display: block;
-  width: 310px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .startbtn {
@@ -72,15 +75,15 @@ button {
 .roll {
   background-color: red;
   color: black;
-  width:130px;
+  width:330px;
   height:40px;
   font-family:Arial;
   font-size: 150%;
-  margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left:25%;
 }
 
 #info {
@@ -91,11 +94,20 @@ button {
     font-size: 300%;
 }
 
-#console-row {
-    border-top: thin solid red;
-    border-bottom: thin solid red;
+#console-col {
+    border-top: solid black;
+    border-right: solid black;
+    border-left: solid black;
+    border-bottom: solid black;
     width: 25%;
     color:black;
+    float:left;
+    width:20%;
+}
+
+#board-col {
+  width:50%;
+  margin: 0 auto;
 }
 
 .game-positive {

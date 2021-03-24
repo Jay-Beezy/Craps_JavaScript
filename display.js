@@ -4,7 +4,7 @@ let display ={
   board: document.getElementById("board"),
   dice_menu: document.getElementById("dice-menu"),
   roll_btn: document.getElementById('roll-button'),
-  console: document.getElementById("console-row"),
+  console: document.getElementById("console-col"),
   console_message: document.getElementById("console-messages"),
   start_slider: document.getElementById("start-slider"),
 
@@ -21,19 +21,13 @@ let display ={
 
 
     this.start_btn.addEventListener("click", () => {
-      if(this.start_slider.value > 0){
-        this.hideAll();
-        this.showBoard();
-        this.showDice();
-        this.showRollButton();
-        this.showConsole();
-        GameConsole.write("Your total starting amount is: $" + this.start_slider.value);
-
-        //Continue with the game?
-      }
-      else{
-        this.reset();
-      }
+      this.hideAll();
+      this.showBoard();
+      this.showDice();
+      this.showRollButton();
+      this.showConsole();
+      GameConsole.write("Your total starting amount is: $" + this.start_slider.value);
+      //Continue with the game?
     });
 
   },

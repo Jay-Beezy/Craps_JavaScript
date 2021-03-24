@@ -14,8 +14,8 @@ let diceCanvas = document.getElementById("dice");
 let diceContext = diceCanvas.getContext('2d');
 var rollButton = document.getElementById('roll-button');
 
-diceContext.font = "50pt Calibri";
-diceContext.fillStyle = "red";
+//diceContext.font = "50pt Calibri";
+//diceContext.fillStyle = "red";
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * 6) + 1;
